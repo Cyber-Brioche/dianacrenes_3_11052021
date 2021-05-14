@@ -10,6 +10,7 @@
   font-family: "Roboto-light";
   src: url(fonts/Roboto-Light.ttf);
 }
+
 body {
   margin: 0;
   padding: 0;
@@ -118,7 +119,7 @@ body {
   font-size: 17px;
   width: 300px;
   padding: 25px;
-  margin-left: 15px;
+  margin-left: 40px;
   margin-top: 60px;
   justify-content: center;
   border-radius: 25px 25px 25px 25px;
@@ -140,5 +141,58 @@ body {
   justify-content: center;
   border-radius: 20px 20px 20px 20px;
   position: relative;
-  top: -48px;
+  top: -8px;
+  left: -285px;
+}
+
+@media all and (min-width: 1163px) {
+  .work-header {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+  }
+
+  .title-work {
+    margin-left: 350px;
+  }
+}
+
+.container-restaurants {
+  background-color: #fafafa;
+  margin-top: 40px;
+}
+
+.restaurant-card {
+  display: flex;
+  background-color: white;
+  border-radius: 20px 20px 20px 20px;
+  height: 300px;
+  justify-content: flex-start;
+  flex-direction: column;
+  box-shadow: 2px 2px 20px silver;
+  margin: 15px;
+}
+
+.food-image {
+  object-fit: cover;
+  width: 100%;
+  height: 220px;
+  border-radius: 20px 20px 0px 0px;
+}
+
+.typo-card {
+  font-family: "Roboto-bold";
+  font-size: 20px;
+  padding-left: 15px;
+  padding-top: 10px;
+}
+
+.typo-location {
+  font-family: "Roboto-light";
+  font-size: 20px;
+  padding-left: 15px;
+}
+
+.icone-heart {
+  align-items: flex-end;
 }
