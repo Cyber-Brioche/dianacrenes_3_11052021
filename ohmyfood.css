@@ -11,6 +11,11 @@
   src: url(fonts/Roboto-Light.ttf);
 }
 
+@font-face {
+  font-family: "Shrikhand";
+  src: url(fonts/Shrikhand-Regular.ttf);
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -145,10 +150,18 @@ body {
   left: -285px;
 }
 
+.work-header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
 @media all and (min-width: 1163px) {
   .work-header {
     display: flex;
     justify-content: center;
+    flex-direction: row;
     padding: 20px;
   }
 
@@ -194,5 +207,63 @@ body {
 }
 
 .icone-heart {
-  align-items: flex-end;
+  vertical-align: top;
+  position: absolute;
+  top: -150px;
+  right: -250px;
+}
+
+.icone-heart:hover {
+  opacity: 100;
+  transition: 0.5s;
+  content: "";
+  background: linear-gradient(#9356dc, #ff79da);
+}
+
+.heart-icon-gradient {
+}
+
+.heart-icon-gradient:hover {
+  visibility: visible;
+}
+
+.footer-box {
+  background-color: #353535;
+  margin-top: 100px;
+}
+
+.footer-content {
+  display: flex;
+  flex-direction: row;
+  padding-top: 10px;
+}
+
+.color-logo {
+  font-family: "Shrikhand";
+  color: white;
+  font-size: 20px;
+  padding-left: 20px;
+  padding-top: 15px;
+}
+
+.color-item {
+  color: white;
+  padding-top: 15px;
+  padding-left: 15px;
+}
+
+.footer-typo {
+  font-family: "Roboto";
+  font-size: 15px;
+  color: white;
+}
+
+.column-logo {
+  display: flex;
+  flex-direction: column;
+}
+
+.column-typo {
+  display: flex;
+  flex-direction: column;
 }
