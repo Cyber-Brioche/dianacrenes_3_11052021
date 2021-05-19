@@ -16,6 +16,12 @@
   src: url(fonts/Shrikhand-Regular.ttf);
 }
 
+a {
+  cursor: pointer;
+  text-decoration: none;
+  color: black;
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -230,6 +236,11 @@ body {
 .footer-box {
   background-color: #353535;
   margin-top: 100px;
+  flex-direction: column;
+}
+
+.footer-mention {
+  padding-bottom: 30px;
 }
 
 .footer-content {
@@ -241,29 +252,70 @@ body {
 .color-logo {
   font-family: "Shrikhand";
   color: white;
+  font-size: 25px;
+  padding: 20px 20px 0px 30px;
+}
+
+.footer-list {
+  display: flex;
+  padding-left: 30px;
+  flex-direction: row;
+}
+
+.color-icon {
+  color: white;
+  padding-right: 20px;
+  padding-top: 25px;
+}
+
+.color-typo {
+  font-family: "Roboto-bold";
   font-size: 20px;
-  padding-left: 20px;
-  padding-top: 15px;
-}
-
-.color-item {
   color: white;
-  padding-top: 15px;
-  padding-left: 15px;
+  padding-top: 20px;
 }
 
-.footer-typo {
-  font-family: "Roboto";
-  font-size: 15px;
+.color-mention {
+  font-family: "Roboto-light";
+  font-size: 20px;
   color: white;
+  padding-left: 30px;
+  padding-top: 10px;
 }
 
-.column-logo {
+/*----------------la palette du gout css----------------*/
+
+.photo-header {
   display: flex;
-  flex-direction: column;
+  max-width: 100%;
+  max-height: 32rem;
+  width: 100%;
+  object-fit: cover;
+  margin-top: 30px;
 }
 
-.column-typo {
+.menu-box {
+  margin-top: -4rem;
+  border-radius: 2rem 2rem 0 0;
+  background-color: #f6f6f6;
+  z-index: 1;
+  position: relative;
+}
+
+.headerbox-menu {
   display: flex;
-  flex-direction: column;
+  padding: 40px 30px 40px 30px;
+}
+
+.text-header {
+  font-family: "Shrikhand";
+  font-size: 25px;
+  padding-right: 30px;
+  font-weight: bold;
+}
+
+.icon-like {
+  display: flex;
+  position: absolute;
+  right: 45px;
 }
