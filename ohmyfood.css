@@ -36,6 +36,7 @@ body {
   left: 0;
   text-align: center;
   box-shadow: 2px 2px 20px silver;
+  z-index: 1;
 }
 .logo {
   height: 30px;
@@ -212,11 +213,10 @@ body {
   padding-left: 15px;
 }
 
-.icone-heart {
-  vertical-align: top;
-  position: absolute;
-  top: -150px;
-  right: -250px;
+.fa-stack {
+  align-self: flex-end;
+  margin-right: 20px;
+  bottom: 30px;
 }
 
 .icone-heart:hover {
@@ -224,9 +224,6 @@ body {
   transition: 0.5s;
   content: "";
   background: linear-gradient(#9356dc, #ff79da);
-}
-
-.heart-icon-gradient {
 }
 
 .heart-icon-gradient:hover {
@@ -283,7 +280,7 @@ body {
   padding-top: 10px;
 }
 
-/*----------------la palette du gout css----------------*/
+/*------------------------------------------------------la palette du gout css-----------------------------------------------------------*/
 
 .photo-header {
   display: flex;
@@ -318,4 +315,71 @@ body {
   display: flex;
   position: absolute;
   right: 45px;
+}
+
+.dishes-box {
+  background-color: #f6f6f6;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.typo-title-catagories {
+  font-family: "Roboto-light";
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.greenline {
+  background-color: #99e2d0;
+  width: 50px;
+  height: 5px;
+  position: absolute;
+}
+
+.menu-itemscard {
+  background-color: white;
+  margin-top: 30px;
+  border-radius: 20px 20px 20px 20px;
+  box-shadow: 2px 2px 20px silver;
+}
+
+.menuitems-typotitle {
+  font-family: "Roboto-bold";
+  font-size: 17px;
+  padding: 20px 20px 5px 20px;
+}
+
+.menuitems-typosub {
+  font-family: "Roboto-light";
+  font-size: 15px;
+  padding: 0px 20px 20px 20px;
+}
+
+.checkbox {
+  display: flex;
+  background-color: silver;
+
+  width: 130px;
+}
+
+.pricebox {
+  background-color: white;
+  font-family: "Roboto-bold";
+  font-size: 17px;
+  padding: 20px 20px 20px 20px;
+}
+
+.iconebox {
+  background-color: #99e2d0;
+}
+
+.icone-color {
+  color: #99e2d0;
+  padding: 20px 17px 20px 17px;
+}
+
+.checkcircle {
+  background-color: white;
+  border-radius: 50px 50px 50px 50px;
 }
