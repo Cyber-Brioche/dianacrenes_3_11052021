@@ -345,6 +345,25 @@ body {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  overflow: hidden;
+}
+
+.menu-itemscard .checkbox {
+  transition: transform ease-in-out 0.5s;
+  transform: translateX(70px);
+}
+
+.menu-itemscard:hover .checkbox {
+  transform: translateX(0px);
+}
+
+.menu-itemscard .icone-color {
+  transition: transform ease-in-out 0.5s;
+  transform: rotate(180deg);
+}
+
+.menu-itemscard:hover .icone-color {
+  transform: rotate(0deg);
 }
 
 .menuitems-typotitle {
@@ -379,20 +398,15 @@ body {
   justify-content: center;
   width: 100%;
   border-radius: 0px 20px 20px 0px;
-  padding: 10px;
-  display: none;
-}
-
-.iconebox:hover {
-  display: block;
+  padding: 20px 10px 20px 10px;
 }
 
 .icone-color {
   color: #99e2d0;
-  padding: 20px 17px 20px 17px;
+  padding: 12px 12px 12px 12px;
 }
 
 .checkcircle {
   background-color: white;
-  border-radius: 50px 50px 50px 50px;
+  border-radius: 20px 20px 20px 20px;
 }
