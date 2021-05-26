@@ -281,6 +281,11 @@ body {
   padding-top: 10px;
 }
 
+.color-typo:hover,
+.color-mention:hover {
+  cursor: pointer;
+}
+
 /*------------------------------------------------------la palette du gout css-----------------------------------------------------------*/
 
 .photo-header {
