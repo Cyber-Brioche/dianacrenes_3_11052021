@@ -94,6 +94,7 @@ body {
 .btn-box {
   display: flex;
   justify-content: center;
+  margin: 30px 10px 10px 10px;
 }
 
 .btn-explorer {
@@ -291,6 +292,10 @@ body {
   margin-top: 30px;
 }
 
+.rotation-image {
+  transform: rotate(0deg);
+}
+
 .menu-box {
   margin-top: -4rem;
   border-radius: 2rem 2rem 0 0;
@@ -321,6 +326,7 @@ body {
   background-color: #f6f6f6;
   padding-left: 20px;
   padding-right: 20px;
+  padding-bottom: 20px;
 }
 
 .typo-title-catagories {
