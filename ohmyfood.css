@@ -17,9 +17,6 @@
 }
 
 body {
-  width: 100%;
-  height: 100%;
-  overflow: hidden;
   margin: 0;
   padding: 0;
 }
@@ -31,6 +28,7 @@ body {
   border: 2px solid #ffccff;
   border-top: 3px solid #b266ff;
   border-radius: 100%;
+  opacity: 0;
 
   position: absolute;
   top: 0;
@@ -39,15 +37,21 @@ body {
   right: 0;
   margin: auto;
 
-  animation: spin 1s infinite linear;
+  animation: spin 1s 2 linear;
 }
 
 @keyframes spin {
   from {
     transform: rotate(0deg);
+    opacity: 1;
   }
   to {
     transform: rotate(360deg);
+  }
+}
+@keyframes hide {
+  to {
+    opacity: 0;
   }
 }
 
