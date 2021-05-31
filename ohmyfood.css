@@ -62,7 +62,7 @@ a {
 }
 
 .header {
-  position: fixed;
+  position: absolute;
   width: 100%;
   margin: 0;
   padding: 0;
@@ -227,6 +227,18 @@ a {
   flex-direction: column;
   box-shadow: 2px 2px 20px silver;
   margin: 15px;
+  position: relative;
+}
+
+.card-badge {
+  background-color: #99e2d0;
+  color: #1b6150;
+  padding: 10px;
+  border-radius: 2px 2px 2px 2px;
+  position: absolute;
+  top: 16px;
+  right: 12px;
+  font-family: "Roboto";
 }
 
 .food-image {
@@ -255,15 +267,38 @@ a {
   bottom: 30px;
 }
 
-.icone-heart:hover {
-  opacity: 100;
-  transition: 0.5s;
-  content: "";
-  background: linear-gradient(#9356dc, #ff79da);
+.icone-heart:hover .heart-icon--nobg {
+  transform: scale(0);
+  transition-duration: 0.5s;
 }
 
-.heart-icon-gradient:hover {
-  visibility: visible;
+.icone-heart:hover .heart-icon--bg {
+  transform: scale(1.1);
+  transition-duration: 0.5s;
+  content: "";
+  color: linear-gradient(#9356dc, #ff79da);
+  background: linear-gradient(#9356dc, #ff79da);
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.icone-heart .heart-icon--nobg {
+  transform: scale(1);
+  transition-duration: 0.5s;
+}
+
+.icone-heart .heart-icon--bg {
+  transform: scale(0);
+  transition-duration: 0.5s;
+  content: "";
+  color: linear-gradient(#9356dc, #ff79da);
+  background: linear-gradient(#9356dc, #ff79da);
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .footer-box {
@@ -321,7 +356,22 @@ a {
   cursor: pointer;
 }
 
-/*------------------------------------------------------la palette du gout css-----------------------------------------------------------*/
+/*------------------------------------------------------Menus css-----------------------------------------------------------*/
+
+@keyframes itemAppear {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.back-link {
+  position: absolute;
+  top: 30px;
+  left: 40px;
+}
 
 .photo-header {
   display: flex;
@@ -347,6 +397,7 @@ a {
 .headerbox-menu {
   display: flex;
   padding: 40px 30px 40px 30px;
+  justify-content: space-between;
 }
 
 .text-header {
@@ -360,6 +411,15 @@ a {
   display: flex;
   position: absolute;
   right: 45px;
+}
+
+.icon-stack {
+  display: inline-block;
+  height: 2em;
+  line-height: 2em;
+  position: relative;
+  vertical-align: middle;
+  width: 2.5em;
 }
 
 .dishes-box {
@@ -393,6 +453,10 @@ a {
   flex-direction: row;
   justify-content: space-between;
   overflow: hidden;
+  animation: itemAppear 0.6s;
+  animation-timing-function: cubic-bezier(0.5, 1.58, 0.34, 0.82);
+  animation-fill-mode: both;
+  transform: scale(0);
 }
 
 .menu-itemscard .checkbox {
@@ -423,6 +487,22 @@ a {
   font-family: "Roboto-light";
   font-size: 15px;
   padding: 0px 20px 20px 20px;
+}
+
+.delay1 {
+  animation-delay: 0s;
+}
+
+.delay2 {
+  animation-delay: 0.1s;
+}
+
+.delay3 {
+  animation-delay: 0.2s;
+}
+
+.delay4 {
+  animation-delay: 0.3s;
 }
 
 .checkbox {
