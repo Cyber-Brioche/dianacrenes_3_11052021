@@ -107,7 +107,6 @@ a {
 .reservation {
   display: flex;
   justify-content: center;
-  text-justify: center;
   font-family: "Roboto-bold";
   font-size: 25px;
 }
@@ -121,7 +120,6 @@ a {
 .discover {
   display: flex;
   justify-content: center;
-  text-justify: center;
   font-family: "Roboto-light";
   font-size: 20px;
 }
@@ -276,11 +274,9 @@ a {
   transform: scale(1.1);
   transition-duration: 0.5s;
   content: "";
-  color: linear-gradient(#9356dc, #ff79da);
   background: linear-gradient(#9356dc, #ff79da);
   -webkit-background-clip: text;
   -moz-background-clip: text;
-  background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
@@ -293,11 +289,9 @@ a {
   transform: scale(0);
   transition-duration: 0.5s;
   content: "";
-  color: linear-gradient(#9356dc, #ff79da);
   background: linear-gradient(#9356dc, #ff79da);
   -webkit-background-clip: text;
   -moz-background-clip: text;
-  background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
